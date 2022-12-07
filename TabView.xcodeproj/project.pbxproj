@@ -11,6 +11,10 @@
 		1D4301B729404D9A00FA4BFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4301B629404D9A00FA4BFA /* ContentView.swift */; };
 		1D4301B929404D9C00FA4BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4301B829404D9C00FA4BFA /* Assets.xcassets */; };
 		1D4301BC29404D9C00FA4BFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4301BB29404D9C00FA4BFA /* Preview Assets.xcassets */; };
+		1D4301C52940511500FA4BFA /*  CoffeeShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4301C42940511500FA4BFA /*  CoffeeShopModel.swift */; };
+		1D4301C82940512B00FA4BFA /* ShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4301C62940512A00FA4BFA /* ShopListView.swift */; };
+		1D4301C92940512B00FA4BFA /* ShopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4301C72940512B00FA4BFA /* ShopDetailView.swift */; };
+		1D4301CC294056F000FA4BFA /* ActivityView in Frameworks */ = {isa = PBXBuildFile; productRef = 1D4301CB294056F000FA4BFA /* ActivityView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		1D4301B629404D9A00FA4BFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D4301B829404D9C00FA4BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D4301BB29404D9C00FA4BFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D4301C42940511500FA4BFA /*  CoffeeShopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " CoffeeShopModel.swift"; sourceTree = "<group>"; };
+		1D4301C62940512A00FA4BFA /* ShopListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopListView.swift; sourceTree = "<group>"; };
+		1D4301C72940512B00FA4BFA /* ShopDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D4301CC294056F000FA4BFA /* ActivityView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +59,8 @@
 		1D4301B329404D9A00FA4BFA /* TabView */ = {
 			isa = PBXGroup;
 			children = (
+				1D4301C3294050EA00FA4BFA /* Model */,
+				1D4301C2294050E100FA4BFA /* View */,
 				1D4301B429404D9A00FA4BFA /* TabViewApp.swift */,
 				1D4301B629404D9A00FA4BFA /* ContentView.swift */,
 				1D4301B829404D9C00FA4BFA /* Assets.xcassets */,
@@ -65,6 +75,23 @@
 				1D4301BB29404D9C00FA4BFA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1D4301C2294050E100FA4BFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D4301C72940512B00FA4BFA /* ShopDetailView.swift */,
+				1D4301C62940512A00FA4BFA /* ShopListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1D4301C3294050EA00FA4BFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D4301C42940511500FA4BFA /*  CoffeeShopModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +110,9 @@
 			dependencies = (
 			);
 			name = TabView;
+			packageProductDependencies = (
+				1D4301CB294056F000FA4BFA /* ActivityView */,
+			);
 			productName = TabView;
 			productReference = 1D4301B129404D9A00FA4BFA /* TabView.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 1D4301A829404D9A00FA4BFA;
+			packageReferences = (
+				1D4301CA294056F000FA4BFA /* XCRemoteSwiftPackageReference "ActivityView" */,
+			);
 			productRefGroup = 1D4301B229404D9A00FA4BFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D4301B729404D9A00FA4BFA /* ContentView.swift in Sources */,
+				1D4301C92940512B00FA4BFA /* ShopDetailView.swift in Sources */,
+				1D4301C52940511500FA4BFA /*  CoffeeShopModel.swift in Sources */,
+				1D4301C82940512B00FA4BFA /* ShopListView.swift in Sources */,
 				1D4301B529404D9A00FA4BFA /* TabViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D4301CA294056F000FA4BFA /* XCRemoteSwiftPackageReference "ActivityView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUI-Plus/ActivityView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D4301CB294056F000FA4BFA /* ActivityView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D4301CA294056F000FA4BFA /* XCRemoteSwiftPackageReference "ActivityView" */;
+			productName = ActivityView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1D4301A929404D9A00FA4BFA /* Project object */;
 }
